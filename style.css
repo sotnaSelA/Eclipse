@@ -1,0 +1,126 @@
+body {
+    background-color: #2a2051;
+    animation: aNoite  10s infinite 1.5s;
+    margin: 0px;
+}
+
+.content {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sol {
+    background-color: #fcd25b;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 3px solid #fcd25b;
+    overflow: hidden;
+    animation: dayToNight2 10s infinite 1.5s;
+    top: 5%;
+    left: 50%;
+}
+
+.degrade{
+    position: absolute;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    animation: Shadow 10s infinite 1.5s;
+}
+
+.lua {
+    background-color: #2a2051;
+    height: 520px;
+    width: 520px;
+    border-radius: 50%;
+    border: 10px solid white;
+    overflow: hidden;
+    margin-top: -20px;
+    left: 0px;
+    animation: movelua 10s infinite 1.5s;
+}
+
+.listra1{
+    position: absolute;
+    background-color: white;
+    width: 530px;
+    height: 45px;
+    margin-left: 0px;
+    margin-top: 35%;
+}
+
+.listra2{
+    position: absolute;
+    background-color: white;
+    width: 530px;
+    height: 45px;
+    margin-left: 0px;
+    margin-top: 50%;
+}
+
+.listra3{
+    position: absolute;
+    background-color: white;
+    width: 530px;
+    height: 45px;
+    margin-left: 0px;
+    margin-top: 65%;
+}
+
+.sombra{
+    background-image: linear-gradient( to top, #473788,#2a2051);
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    left: 27%;
+    overflow: hidden;
+    margin-left: 70px;
+    margin-top: 15%;
+    
+}
+
+@keyframes movelua{
+    0%{
+        transform: translateX(550px);
+        
+    }
+    50%{
+        transform: translateX(40px);
+        ;
+    }
+    100%{
+        transform: translateX(-570px);
+        
+    }
+}
+
+@keyframes Shadow {
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color:#ffffff00;
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+@keyframes aNoite {
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: #2a2051;
+    }
+    100%{
+        background-color: white;
+    }
+}
